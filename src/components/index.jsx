@@ -1,9 +1,12 @@
 import React from 'react'
-
+import Header from './common/header'
+import Footer from './common/footer'
 const Index = () => {
   return (
     <>
-    <h1>Hello world</h1>
+    <Header/>
+    
+    <Footer/>
     </>
   )
 }
