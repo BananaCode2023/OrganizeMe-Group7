@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react';
-import {  MDBIcon } from "mdb-react-ui-kit";
+import { MDBIcon } from "mdb-react-ui-kit";
 import {
     Collapse,
     Navbar,
@@ -27,6 +27,7 @@ const Header = () => {
     
     return(
       <>
+
         {/* <div className='navbar-container'> */}
           <Navbar expand={deviceWidth} className='navbar-container'>
             <a href="/">
@@ -38,7 +39,7 @@ const Header = () => {
               <NavLink href='' id='feat'>
                 Features
               </NavLink>
-              <NavLink href='' id='about'>
+              <NavLink href="/about" id='about'>
                 About
               </NavLink>
               <NavLink href='' id='login'>
@@ -56,7 +57,7 @@ const Header = () => {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href='' id='about'>
+                    <NavLink href='/about' id='about'>
                       About
                     </NavLink>
                   </NavItem>

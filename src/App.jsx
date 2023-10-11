@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import { useState } from 'react'
 import './App.css'
 import Index from './components/index'
+import About from './components/about'
 
 function App() {
   
@@ -10,6 +11,11 @@ function App() {
       path: "/",
       element: <Index/>,
     },
+    {
+      path: "/about",
+      element: <About/>,
+    },
+
   ]);
 
   return (
