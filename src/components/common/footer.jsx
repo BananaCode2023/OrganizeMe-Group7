@@ -55,7 +55,7 @@ const Footer = () => {
                 </ul>
             </div>
           </div>
-          <div className="row text-center">
+          <div className="row pb-3 text-center">
             <p>© 2023 OrganizeMe All Rights Reserved</p>
           </div>
       </footer>

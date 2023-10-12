@@ -46,7 +46,29 @@ footer li a{
 .social-links li{
     display: inline-block;
     padding-right: 10px;
+    /* padding-bottom: 10px; */
 }
 .social-links{
     padding-left: 0%;
 }
+
+
+
+/* CSS for all devices small to large */
+
+@media screen and (min-width: 0px) {
+    /* Styles for all devices (including smartphones) */
+  }
+  
+@media screen and (min-width: 768px) {
+    /* Styles for tablets and larger devices */
+  }
+  
+@media screen and (min-width: 992px) {
+    /* Styles for desktops and larger devices */
+  }
+  
+@media screen and (min-width: 1200px) {
+    /* Styles for larger desktops and larger devices */
+  }
+  
