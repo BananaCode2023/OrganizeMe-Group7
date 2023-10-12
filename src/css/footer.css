@@ -1,0 +1,52 @@
+/* Footer top section */
+
+footer{
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #ECF1F5;
+}
+
+footer q{
+    color: #232323;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 20px;
+    
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.free-btn{
+    width: 176px;
+    height: 37px;
+}
+
+
+
+/* footor botton */
+
+footer li{
+    list-style: none;
+    color: #232323;
+}
+
+footer ul{
+    padding-left: 0%;
+}
+footer li a{
+    text-decoration: none;
+    color: #232323;
+}
+
+.social-links li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.social-links{
+    padding-left: 0%;
+}

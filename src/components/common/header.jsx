@@ -1,19 +1,14 @@
-import React from 'react'
+
 import {useState} from 'react';
-import { MDBIcon } from "mdb-react-ui-kit";
+
 import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-    Dropdown,
-    DropdownToggle,
-    DropdownItem,
-    DropdownMenu,
-    UncontrolledDropdown
+
   } from 'reactstrap';
 import '../../css/header.css'
 import omWhiteLogo from '../../assets/omWhiteLogo.png'
@@ -36,13 +31,13 @@ const Header = () => {
             </a>
 
             <div className='nav-links'>
-              <NavLink href='' id='feat'>
+              <NavLink className='nav-btn' href='' id='feat'>
                 Features
               </NavLink>
-              <NavLink href="/about" id='about'>
+              <NavLink className='nav-btn' href="/about" id='about'>
                 About
               </NavLink>
-              <NavLink href='' id='login'>
+              <NavLink className='nav-btn' href='' id='login'>
                 Login
               </NavLink>
             </div>

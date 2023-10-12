@@ -15,8 +15,9 @@
   color: #FFF;
   gap: 40px;
 }
-.nav-link:hover{
-  border-bottom: solid 2px #F7F8FF;
+.nav-btn:hover{
+  /* border-bottom: solid 2px #F7F8FF; */
+  /* text-decoration: 2px underline; */
 }
 .navbar-toggler{
   display: none;
