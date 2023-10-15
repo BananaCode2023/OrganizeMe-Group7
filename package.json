@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "aos": "^2.3.4",
     "mdb-react-ui-kit": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,6 +21,7 @@
     "reactstrap": "^9.2.0"
   },
   "devDependencies": {
+    "@iconify-icon/react": "^1.0.8",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",

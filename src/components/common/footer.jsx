@@ -32,11 +32,11 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col mb-5">
-                <h5>Social Media</h5>
                 <ul className="social-links">
-                    <li><a href=""><img src="/Images/Icons/facebook.svg" alt="" /></a></li>
-                    <li><a href=""><img src="/Images/Icons/twitter.svg" alt="" /></a></li>
-                    <li><a href=""><img src="/Images/Icons/instagram.svg" alt="" /></a></li>
+                  <li><h5>Social Media</h5></li>
+                    <li><a href=""><img src="/Images/Icons/facebook.svg" alt="Facebook" /></a></li>
+                    <li><a href=""><img src="/Images/Icons/twitter.svg" alt="XTwitter" /></a></li>
+                    <li><a href=""><img src="/Images/Icons/instagram.svg" alt="Instagram" /></a></li>
                 </ul>
             </div>
             <div className="col">

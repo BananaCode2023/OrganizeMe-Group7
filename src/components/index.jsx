@@ -1,15 +1,88 @@
-import React from 'react'
+import React from 'react';
 import Header from './common/header'
 import Footer from './common/footer'
-const Index = () => {
+import '../css/index.css'
+// icons for fontawosome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'; 
+// icons for iconify
+import {Icon} from '@iconify-icon/react'
+// Import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import  { useEffect } from 'react';
 
-  return (
-    <>
-    <Header/>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ratione illum possimus sint sed. Non neque voluptate qui nobis sed quos tempore, vero, nam debitis unde iure numquam quo modi suscipit aliquam consequuntur adipisci nihil facere vel quod? Blanditiis pariatur sed sint iste debitis quod facilis nostrum quas, asperiores optio accusamus quam nihil, quo modi dicta cum tempora praesentium officiis dolorem! Ipsum velit odio voluptas dolorem asperiores necessitatibus, nulla adipisci fuga aliquid expedita eligendi debitis, vitae voluptatum rem quibusdam magni dolore? Recusandae porro repellat itaque, repudiandae obcaecati fuga minus distinctio soluta, animi quaerat minima iure dolorem. Deleniti distinctio, voluptatum magni quo velit iure. Consequuntur, qui debitis ipsa accusamus laudantium doloremque? Labore quidem exercitationem consequuntur maiores nam voluptate ullam aut ipsa aliquid explicabo amet veniam, enim deleniti, totam numquam fuga quas recusandae, rerum asperiores blanditiis perferendis vitae. Fugit a qui rerum? Blanditiis, porro! Tempora dolor ipsum labore accusantium laboriosam similique excepturi quasi suscipit voluptas ipsam, quod cum non nam facilis! Corrupti, eius inventore in amet nulla id dolor asperiores fugiat enim voluptas earum eos ea exercitationem? Quas deleniti soluta aut sit labore, expedita cum, magni nesciunt quod asperiores voluptates, sint maiores ea esse inventore. Modi dolor minima consequatur ea repellendus fuga, nihil quasi suscipit nam deleniti perferendis maxime. Tempora unde sapiente odio quam ea sunt maiores numquam, molestiae quod cupiditate iste optio nemo sit. Recusandae, quas nisi temporibus voluptas expedita nam culpa repudiandae, eveniet, eum ut non! Impedit, perspiciatis accusamus laborum quae totam, doloribus quisquam sit voluptatum consequuntur aliquam eligendi dolore nulla mollitia sed? Amet impedit odio quo omnis tempore consequuntur optio velit dolorem, molestiae necessitatibus voluptatum itaque reiciendis hic beatae quos veritatis minus non reprehenderit? Saepe voluptate iusto perspiciatis quasi officia mollitia obcaecati distinctio deleniti dicta debitis quae sequi minima libero facere placeat asperiores necessitatibus, natus quaerat nemo? Hic magni voluptas harum cumque quidem error numquam asperiores tempora natus, aliquid possimus ad explicabo beatae, officia itaque deserunt nihil cupiditate ipsa! Quisquam vitae, molestiae corporis porro, id quas iusto quidem ratione illum fugit veniam harum nemo laborum. Aspernatur placeat, possimus dolorum sed fuga, nesciunt voluptate quo, illo totam dignissimos iste! Eum quidem odit quo dolore? Cum pariatur iure ducimus consectetur quis animi impedit ipsam similique molestias debitis reprehenderit, ipsum cupiditate nemo commodi ab mollitia illo accusamus, porro iusto ad officiis nulla recusandae. Dolorem atque, quis ab culpa veritatis adipisci molestiae exercitationem commodi cum laudantium blanditiis ipsam reprehenderit aut sunt facilis error odio delectus, neque harum officia quaerat quibusdam quod. Ducimus itaque architecto nulla optio debitis deleniti aut necessitatibus numquam nostrum quia adipisci, repellat, exercitationem eius corporis aliquid reprehenderit dolor. Velit ut modi debitis repudiandae, totam quisquam sequi. Labore maiores perferendis, optio iure aperiam magni vitae iusto non id alias minima dolorum ad facilis nisi, doloribus tempora atque voluptatibus doloremque nostrum dignissimos! Inventore repudiandae consequuntur reprehenderit repellat eaque fugiat voluptates, libero dolores aspernatur odit omnis dolor eligendi dignissimos commodi veniam quis blanditiis. Aliquam minima iure excepturi possimus mollitia eius doloremque ea in illum quam nobis quisquam repellat quas blanditiis ipsam, ex exercitationem.</p>
-    <Footer/>
-    </>
-  )
+
+export default function Index () {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+      console.log('Component rendered');
+
+    return(
+        <>
+            <Header />
+            <main>
+                <div className="row mb-5 landingpage_sec1">
+                    <div className="row" >
+                        <p>Simplifying Life One Task at a Time</p>
+                    </div>
+                    <div className="row landingpage_main" >
+                        <img src="/Images/Flat illustrations/landingpage_sec1.png" alt="landingpage-image" />
+                    </div>
+                    <div className="row mb-3 text-center">
+                        <span>Start your journey on having a simple, easy, and organized life.<br></br>
+                            Organize, prioritize, and achieve more every day.</span>
+                    </div>
+                    <div className="row text-center">
+                        <div className="col">
+                            <button type="button" className="btn btn-success mx-auto started-btn"><a href="">Get Started <FontAwesomeIcon icon={faArrowRight} style={{color: "#f4f7fa",}} /></a></button>
+                            <i className='whitespace'>__</i>
+                            <button type="button" className="btn btn-bs-light-border-subtle mx-auto explore-btn"><a href="">Explore</a></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <section>
+                <div className="row mb-5 mt-5 landingpage_sec2">
+                        <div className="col" data-aos="fade-up" data-aos-delay='1000' >
+                            <p className='main_subtitle'><Icon icon="foundation:checkbox" color="#232323" />  Stay Organized, Anytime, Anywhere</p>
+                            <p className='main_content'>You can create, edit, and organize tasks seamlessly from any device. Your to-do list stays updated wherever you go, thanks to seamless syncing.</p>
+                        </div>
+                        <div className="col side-image" data-aos="fade-up" data-aos-delay='1000'>
+                            <img src="/Images/Flat illustrations/Work time.gif" className='responsive-image' alt="Side-image" />
+                        </div>
+                </div>
+                <div className="row mb-5 mt-5 landingpage_sec2">
+                <div className="col" data-aos="fade-up"  data-aos-delay='1500'>
+                        <p className='main_subtitle'><Icon icon="foundation:checkbox" color="#232323" /> Smart Reminders</p>
+                        <p className='main_content'>You can create, edit, and organize tasks seamlessly from any device. Your to-do list stays updated wherever you go, thanks to seamless syncing.</p>
+                    </div>
+                    <div className="col side-image" data-aos="fade-up"  data-aos-delay='1500'>
+                        <img src="/Images/Flat illustrations/Reminders.gif" className='responsive-image' alt="Side-image" />
+                    </div>
+                </div>
+                <div className="row mb-5 mt-5 landingpage_sec2">
+                    <div className="col" data-aos="fade-up"  data-aos-delay='2000' >
+                        <p className='main_subtitle'><Icon icon="foundation:checkbox" color="#232323"  /> Prioritize your Tasks</p>
+                        <p className='main_content'>Effortlessly prioritize tasks by urgency and importance using our intuitive drag-and-drop interface. Rearrange tasks instantly and focus on what truly matters.</p>
+                    </div>
+                    <div className="col side-image" data-aos="fade-up"  data-aos-delay='2000' >
+                        <img src="/Images/Flat illustrations/Prioritise.gif" className='responsive-image' alt="Side-image" />
+                    </div>
+                </div>
+                <div className="row mb5 pt-5 text-center landingpage_sec3" data-aos="fade-up"  data-aos-delay='1500'>
+                    <q className='qoutes'>In the symphony of life, let your<br/> tasks find harmony.</q>
+                    <p className='author'>-The Ben</p>
+                </div>
+                <div className="row mb-5">
+                    <h1 style={{color: 'red'}}>Road Map on progress</h1>
+                </div>
+            </section>
+            <Footer />
+        </>
+    )
+
 }
-
-export default Index
