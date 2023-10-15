@@ -1,21 +1,24 @@
-import { createBrowserRouter, RouterProvider,} from "react-router-dom";
-import { useState } from 'react'
-import './App.css'
-import Index from './components/index'
-import About from './components/about'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useState } from "react";
+import "./App.css";
+import Index from "./components/index";
+import About from "./components/about";
+import Features from "./components/features";
 
 function App() {
-  
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Index/>,
+      element: <Index />,
     },
     {
       path: "/about",
-      element: <About/>,
+      element: <About />,
     },
-
+    {
+      path: "/features",
+      element: <Features />,
+    },
   ]);
 
   return (
@@ -24,8 +27,7 @@ function App() {
         <RouterProvider router={router} />
       </div>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
